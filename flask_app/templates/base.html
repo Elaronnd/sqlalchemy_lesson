@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student manager</title>
+</head>
+<body>
+<nav>
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('add_student') }}">Add student</a>
+</nav>
+<div> {% block content %}{% endblock %} </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Edit Student</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=32) }}
+        </p>
+        <p>
+            {{ form.age.label }}<br>
+            {{ form.age(size=32) }}
+        </p>
+        <p>
+            {{ form.major.label }}<br>
+            {{ form.major(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
